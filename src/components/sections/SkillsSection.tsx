@@ -11,7 +11,7 @@ import {
   Megaphone,
   PresentationIcon,
   Network,
-  FilesSpreadsheet,
+  FileSpreadsheet,
   Handshake,
   Search,
   Clock,
