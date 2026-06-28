@@ -11,12 +11,13 @@ import {
   Megaphone,
   PresentationIcon,
   Network,
-  FileSpreadsheet,
+  FilesSpreadsheet,
   Handshake,
   Search,
   Clock,
-  Briefcase,
+ Briefcase,
   Layers,
+  type LucideIcon,
 } from "lucide-react";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 
@@ -60,7 +61,7 @@ function SkillCard({
   inView,
 }: {
   name: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   level: number;
   delay: number;
   inView: boolean;
