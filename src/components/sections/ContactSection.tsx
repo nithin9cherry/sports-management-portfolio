@@ -65,7 +65,7 @@ export function ContactSection() {
       id="contact"
       label="Contact"
       title="Let's Connect"
-      subtitle="I'm always open to discussing sports management, event operations, internships, collaborations, and new opportunities. Feel free to connect with me through any of the platforms below."
+      subtitle="I&apos;m always open to discussing sports management, event operations, internships, collaborations, and new opportunities. Feel free to connect with me through any of the platforms below."
     >
       <div ref={ref} className="space-y-16">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
@@ -124,7 +124,7 @@ export function ContactSection() {
               <div>
                 <h3 className="text-base font-bold text-foreground">Send a Message</h3>
                 <p className="text-xs text-muted-foreground mt-1 mb-4">
-                  Have a question, opportunity, or collaboration in mind? I'd love to hear from you.
+                  Have a question, opportunity, or collaboration in mind? I&apos;d love to hear from you.
                 </p>
               </div>
 
