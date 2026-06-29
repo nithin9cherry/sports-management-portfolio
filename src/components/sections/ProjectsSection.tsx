@@ -21,6 +21,7 @@ const PROJECTS = [
     accentColor: "text-blue-400",
     borderHover: "hover:border-blue-500/40",
     title: "IPL Stadium Operations Blueprint",
+     pdf: "/projects/IPL_Stadium_Operations.pdf",
     description:
       "Designed a complete match-day operations blueprint for an IPL fixture at Rajiv Gandhi International Cricket Stadium, Hyderabad. Covers stadium operations, crowd management, volunteer deployment, security planning, vendor coordination, emergency response, and operational budgeting.",
     tech: ["Microsoft Excel", "Microsoft PowerPoint", "Project Planning", "Stadium Operations"],
@@ -33,6 +34,7 @@ const PROJECTS = [
     accentColor: "text-violet-400",
     borderHover: "hover:border-violet-500/40",
     title: "Pro Kabaddi Hyderabad Event Management Plan",
+     pdf: "/projects/pro-kabaddi-event-plan.pdf",
     description:
       "Created a complete event management plan for hosting a Pro Kabaddi League event in Hyderabad. Developed operational workflows covering vendor coordination, staff deployment, budgeting, scheduling, and overall event execution.",
     tech: ["Microsoft Word", "Microsoft Excel", "Project Planning", "Event Management"],
@@ -45,6 +47,7 @@ const PROJECTS = [
     accentColor: "text-emerald-400",
     borderHover: "hover:border-emerald-500/40",
     title: "IPL Sports Analytics Dashboard",
+     pdf: "/projects/pro-kabaddi-event-plan.pdf", 
     description:
       "Developed a sports analytics dashboard to evaluate IPL team and player performance through statistical analysis and interactive visualizations. Focuses on converting match data into meaningful insights for decision-making.",
     tech: ["Microsoft Excel", "Google Sheets", "Data Analysis", "Sports Analytics"],
@@ -57,6 +60,7 @@ const PROJECTS = [
     accentColor: "text-amber-400",
     borderHover: "hover:border-amber-500/40",
     title: "Sports Sponsorship & Marketing Proposal",
+     pdf: "/projects/sports-sponsorship.pdf",
     description:
       "Prepared a sponsorship and marketing proposal for the Hyderabad Corporate Cricket League, including sponsorship packages, revenue forecasting, brand activation strategies, and marketing initiatives aimed at attracting partners and maximizing event value.",
     tech: ["Microsoft PowerPoint", "Microsoft Word", "Sponsorship", "Data Analysis"],
@@ -69,6 +73,7 @@ const PROJECTS = [
     accentColor: "text-rose-400",
     borderHover: "hover:border-rose-500/40",
     title: "Hyderabad Marathon Operations & Risk Management",
+     pdf: "/projects/hyderabad-marathon.pdf",
     description:
       "Designed an operational management plan for the Hyderabad City Marathon, covering route planning, resource allocation, operational logistics, risk assessment, budgeting, and sustainability practices to ensure a safe and efficient sporting event.",
     tech: ["Microsoft Excel", "Project Planning", "Risk Management", "Data Analysis"],
@@ -150,13 +155,15 @@ function ProjectCard({ project, index, inView }: ProjectCardProps) {
 
         {/* Buttons */}
         <div className="flex gap-2 pt-4 border-t border-border/40">
-          <a
-            href="#"
-            className="flex items-center gap-1.5 px-4 py-2 text-xs font-medium bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all"
-          >
-            <ExternalLink size={12} />
-            View Project
-          </a>
+         <a
+  href={project.pdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-1.5 px-4 py-2 text-xs font-medium"
+>
+  <ExternalLink size={12} />
+  View Project Report
+</a>
           <a
             href="#"
             className="flex items-center gap-1.5 px-4 py-2 text-xs font-medium bg-white/5 hover:bg-white/10 text-muted-foreground hover:text-foreground rounded-lg transition-all border border-border/40"
