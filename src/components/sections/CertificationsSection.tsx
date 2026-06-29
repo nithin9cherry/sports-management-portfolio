@@ -14,6 +14,7 @@ const CERTIFICATIONS = [
     accent: "text-blue-400",
     border: "border-blue-500/20",
     description: "These certifications strengthened my understanding of sports operations, event planning, venue management, and practical industry workflows while complementing my academic background and portfolio projects.",
+    pdf: "/certificates/sports-management-essentials.pdf",
   },
   {
     title: "Sports Management: Gameday Operations",
@@ -23,6 +24,7 @@ const CERTIFICATIONS = [
     accent: "text-violet-400",
     border: "border-violet-500/20",
     description: "These certifications strengthened my understanding of sports operations, event planning, venue management, and practical industry workflows while complementing my academic background and portfolio projects.",
+    pdf: "/certificates/sports-management-gameday.pdf",
   },
   {
     title: "Event Management",
@@ -32,6 +34,7 @@ const CERTIFICATIONS = [
     accent: "text-emerald-400",
     border: "border-emerald-500/20",
     description: "These certifications strengthened my understanding of sports operations, event planning, venue management, and practical industry workflows while complementing my academic background and portfolio projects.",
+    pdf: "/certificates/event-management.pdf",
   },
 ];
 
@@ -75,10 +78,15 @@ export function CertificationsSection() {
               {cert.description}
             </p>
 
-            <button className="mt-4 flex items-center gap-1 text-[11px] text-muted-foreground hover:text-foreground transition-colors">
-              <ExternalLink size={11} />
-              View Credential
-            </button>
+            <a
+  href={cert.pdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-flex items-center gap-1 text-[11px] text-blue-400 hover:text-blue-300"
+>
+  <ExternalLink size={11} />
+  View Certificate
+</a>
           </motion.div>
         ))}
       </div>
